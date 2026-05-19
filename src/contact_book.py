@@ -25,15 +25,13 @@ class contactbook:
             self.contacts[name]['address'] = address
 
             print('Contact added')
-            print('-'*50)
 
     def view_contacts(self):
         for name, info in self.contacts.items():
             print("Name:", name)
-            print("Phone:", info['phone'])
-            print("Email:", info['email'])
-            print("Address:", info['address'])
-            print('-'*50)
+            print(" ◉ Phone:", info['phone'])
+            print(" ◉ Email:", info['email'])
+            print(" ◉ Address:", info['address'])
 
     def update_contact(self, name:str, phone: str = None, email: str = None, address: str = None):
         if name in self.contacts:
@@ -48,8 +46,7 @@ class contactbook:
                 self.contacts[name]['email'] = email
             if address:
                 self.contacts[name]['address'] = address
-            print('Conract updated')  
-            print('-'*50)  
+            print('Conract updated')   
             return
 
         print('Contact not found!')     

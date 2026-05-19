@@ -22,6 +22,7 @@ if __name__ == "__main__":
             email = input("Enter Contact email: ")
             address = input("Enter Contact address: ")
             book.add_contact(name, phone, email, address)
+            print('-'*50)
 
         elif user_choice == '2':
             name = input("\nEnter name of the contact to edit: ")
@@ -29,10 +30,12 @@ if __name__ == "__main__":
             email = input("Enter new/updated email or press Enter to keep unchanged: ")
             address = input("Enter new/updated address or press Enter to keep unchanged: ")
             book.update_contact(name, phone or None, email or None, address or None)
-
+            print('-'*50)
+            
         elif user_choice == '3':
             print("\nList of Contacts:")
             book.view_contacts()
+            print('-'*50) 
 
         elif user_choice == '4':
             name = input("\nEnter name of contact to delete: ")
