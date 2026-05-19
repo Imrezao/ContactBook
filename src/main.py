@@ -37,6 +37,8 @@ if __name__ == "__main__":
         elif user_choice == '4':
             name = input("\nEnter name of contact to delete: ")
             book.delete_contact(name)
+            print('-'*50)
+            
 
         elif user_choice == '5':
             print("\nThank You for using Contact Book Application. Goodbye!")
